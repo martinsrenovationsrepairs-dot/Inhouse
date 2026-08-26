@@ -39,7 +39,7 @@ function Header() {
 
 function Footer() {
   const { t } = useLanguage()
-  return <footer className="footer"><div className="footer-grid"><div><Brand /><p>{t.footer.promise}</p></div><nav><Link to="/services">{t.nav.services}</Link><Link to="/work">{t.nav.work}</Link><Link to="/holiday-homes">{t.nav.holiday}</Link><Link to="/about">{t.nav.about}</Link></nav><div className="footer-contact"><a href={phoneHref}><Phone />{phoneDisplay}</a><a href={`mailto:${email}`}><Mail />{email}</a><span><MapPin />Setúbal, Portugal</span></div></div><div className="footer-bottom"><span>© {new Date().getFullYear()} Martins In House Services. {t.footer.rights}</span><div><Link to="/privacy">{t.legal.privacyTitle}</Link><Link to="/cookies">{t.legal.cookieTitle}</Link></div></div></footer>
+  return <footer className="footer"><div className="footer-grid"><div><Brand /><p>{t.footer.promise}</p></div><nav><Link to="/services">{t.nav.services}</Link><Link to="/work">{t.nav.work}</Link><Link to="/holiday-homes">{t.nav.holiday}</Link><Link to="/about">{t.nav.about}</Link></nav><div className="footer-contact"><a href={phoneHref}><Phone />{phoneDisplay}</a><a href={`mailto:${email}`}><Mail />{email}</a><span><MapPin />Setúbal, Portugal</span></div></div><div className="footer-bottom"><span>© {new Date().getFullYear()} Martins In House Services. {t.footer.rights} · Deploy automático ativo</span><div><Link to="/privacy">{t.legal.privacyTitle}</Link><Link to="/cookies">{t.legal.cookieTitle}</Link></div></div></footer>
 }
 
 function MobileActions() {
