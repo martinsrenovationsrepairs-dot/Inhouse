@@ -5,6 +5,7 @@ on:
     branches: [main]
   pull_request:
     branches: [main]
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -56,3 +57,15 @@ jobs:
           if-no-files-found: error
           retention-days: 7
 
+      - name: Assemble Hostinger release
+        if: github.event_name != 'pull_request'
+        run: bash scripts/ci/assemble-hostinger-release.sh
+
+      - name: Upload Hostinger release
+        if: github.event_name != 'pull_request'
+        uses: actions/upload-artifact@v7
+        with:
+          name: hostinger-node-release
+          path: SiteGervas-Hostinger-Node-ready.zip
+          if-no-files-found: error
+          retention-days: 14
