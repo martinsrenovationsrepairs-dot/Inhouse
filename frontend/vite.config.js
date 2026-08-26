@@ -19,7 +19,6 @@ export default defineConfig(({ command }) => {
     }
   }
   return {
-    envDir: '..',
     plugins: [react()],
     publicDir,
     build: {
