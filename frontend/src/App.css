@@ -36,7 +36,7 @@ h1, h2 { font-family: 'Archivo Black', sans-serif; text-transform: uppercase; le
 .text-link svg { width: 18px; }
 .hero-media { position: relative; padding: 0 28px 28px 0; }
 .hero-media img { position: relative; z-index: 1; width: 100%; height: 520px; object-fit: cover; }
-.hero-media span { position: absolute; right: 0; bottom: 0; width: 52%; height: 46%; background: var(--clay); }
+.hero-media span { position: absolute; right: 0; bottom: 0; width: 52%; height: 46%; background: var(--green); }
 .section { width: min(1320px, calc(100% - 64px)); margin: auto; padding: 110px 0; }
 .section-label { display: block; margin-bottom: 22px; color: var(--green); font-size: .75rem; font-weight: 800; letter-spacing: .15em; text-transform: uppercase; }
 .split-heading { display: flex; align-items: end; justify-content: space-between; gap: 48px; margin-bottom: 58px; }
