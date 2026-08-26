@@ -1,0 +1,30 @@
+{
+    "$schema": "https://www.schemastore.org/package.json",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "build": "npm --prefix frontend ci --include=dev && npm --prefix frontend run build",
+        "start": "node server/app.js",
+        "dev": "concurrently -n API,WEB -c green,blue \"node --watch server/app.js\" \"npm --prefix frontend run dev\"",
+        "lint": "npm --prefix frontend run lint && node --check server/app.js && node --check server/database.js && node --check server/entities.js",
+        "test": "node --test server/tests/*.test.js",
+        "db:migrate": "node server/cli.js migrate",
+        "db:seed:demo": "node server/cli.js seed-demo",
+        "admin:create": "node server/cli.js admin-create"
+    },
+    "dependencies": {
+        "bcryptjs": "^3.0.2",
+        "cookie-parser": "^1.4.7",
+        "dotenv": "^17.2.2",
+        "express": "^5.1.0",
+        "express-rate-limit": "^8.1.0",
+        "helmet": "^8.1.0",
+        "jsonwebtoken": "^9.0.2",
+        "multer": "^2.0.2",
+        "mysql2": "^3.14.5"
+    },
+    "devDependencies": {
+        "concurrently": "^10.0.3",
+        "vite": "^8.2.0"
+    }
+}

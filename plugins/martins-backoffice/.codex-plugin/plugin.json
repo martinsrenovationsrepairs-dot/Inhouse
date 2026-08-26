@@ -1,0 +1,28 @@
+{
+  "name": "martins-backoffice",
+  "version": "1.0.0+codex.20260817230738",
+  "description": "Gest\u00e3o segura do backoffice Martins atrav\u00e9s do chat do Codex.",
+  "author": {
+    "name": "Martins"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Martins Backoffice",
+    "shortDescription": "Clientes, trabalhos, agenda, materiais e encomendas.",
+    "longDescription": "L\u00ea e gere os dados operacionais do backoffice Martins diretamente na base de dados Laravel, com campos autorizados, auditoria e confirma\u00e7\u00e3o para elimina\u00e7\u00f5es.",
+    "developerName": "Martins",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write",
+      "CRUD",
+      "Database"
+    ],
+    "defaultPrompt": [
+      "Mostra o resumo atual do backoffice.",
+      "Procura clientes e os respetivos trabalhos.",
+      "Lista os materiais ainda por comprar."
+    ]
+  },
+  "mcpServers": "./.mcp.json"
+}

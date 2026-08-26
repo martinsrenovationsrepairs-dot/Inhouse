@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@400;500;600;700&display=swap');
+
+:root { font-family: 'DM Sans', sans-serif; color: #1d1d1b; background: #f8f6f1; font-synthesis: none; text-rendering: optimizeLegibility; --ink: #1d1d1b; --paper: #f8f6f1; --green: #143f2c; --green-dark: #0b2c1e; --clay: #d85d2f; --line: #b9b7af; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { min-width: 320px; min-height: 100vh; margin: 0; background: var(--paper); }
+button, input, select, textarea { font: inherit; }
+a { color: inherit; }
+img { display: block; max-width: 100%; }
+::selection { color: white; background: var(--green); }
+:focus-visible { outline: 3px solid #f08a61; outline-offset: 3px; }

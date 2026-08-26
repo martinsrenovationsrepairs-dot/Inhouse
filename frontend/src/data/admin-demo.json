@@ -1,0 +1,77 @@
+{
+  "appointments": [
+    { "id": 1, "title": "Visita técnica — Casa de banho", "client": "Sofia Almeida", "date": "2026-08-18", "time": "09:30", "duration": "1h", "location": "Azeitão", "status": "confirmado", "serviceId": 1 },
+    { "id": 2, "title": "Início da pintura interior", "client": "James Wilson", "date": "2026-08-18", "time": "14:00", "duration": "3h", "location": "Setúbal", "status": "confirmado", "serviceId": 2 },
+    { "id": 3, "title": "Medição de pavimento", "client": "Marta Silva", "date": "2026-08-20", "time": "11:00", "duration": "1h", "location": "Palmela", "status": "pendente", "serviceId": 3 },
+    { "id": 4, "title": "Manutenção casa de férias", "client": "Anna Müller", "date": "2026-08-22", "time": "10:00", "duration": "2h", "location": "Sesimbra", "status": "confirmado", "serviceId": 4 }
+  ],
+  "clients": [
+    { "id": 1, "name": "Sofia Almeida", "email": "sofia.almeida@example.test", "phone": "+351 910 000 101", "language": "PT", "location": "Azeitão", "jobs": 2, "value": 4850, "tags": ["Renovação", "Recorrente"], "notes": "Prefere contacto por WhatsApp após as 18h." },
+    { "id": 2, "name": "James Wilson", "email": "james.wilson@example.test", "phone": "+351 910 000 102", "language": "EN", "location": "Setúbal", "jobs": 1, "value": 2100, "tags": ["Pintura"], "notes": "Enviar atualizações com fotografias no final de cada dia." },
+    { "id": 3, "name": "Marta Silva", "email": "marta.silva@example.test", "phone": "+351 910 000 103", "language": "PT", "location": "Palmela", "jobs": 1, "value": 1650, "tags": ["Pavimento"], "notes": "Aguarda amostras de acabamento." },
+    { "id": 4, "name": "Anna Müller", "email": "anna.mueller@example.test", "phone": "+351 910 000 104", "language": "DE", "location": "Sesimbra", "jobs": 3, "value": 7200, "tags": ["Casa de férias", "Recorrente"], "notes": "Proprietária no estrangeiro. Comunicar em alemão ou inglês." }
+  ],
+  "messages": [
+    { "id": 1, "client": "Sofia Almeida", "channel": "WhatsApp", "subject": "Escolha dos azulejos", "body": "Enviei duas referências de azulejo. Pode confirmar qual funciona melhor com o orçamento?", "date": "2026-08-17T10:35:00", "unread": true, "priority": "normal" },
+    { "id": 2, "client": "James Wilson", "channel": "Email", "subject": "Acesso ao imóvel", "body": "The keys will be available with the building manager from 8:30.", "date": "2026-08-17T08:10:00", "unread": true, "priority": "alta" },
+    { "id": 3, "client": "Anna Müller", "channel": "Email", "subject": "Monthly inspection", "body": "Could you include a photo of the garden irrigation system in the next report?", "date": "2026-08-16T16:20:00", "unread": false, "priority": "normal" },
+    { "id": 4, "client": "Marta Silva", "channel": "Telefone", "subject": "Alteração da visita", "body": "Solicitou alterar a medição para as 11:00.", "date": "2026-08-15T12:00:00", "unread": false, "priority": "normal" }
+  ],
+  "services": [
+    { "id": 1, "reference": "SRV-026", "title": "Renovação de casa de banho", "client": "Sofia Almeida", "status": "em_curso", "progress": 65, "start": "2026-08-10", "deadline": "2026-08-28", "budget": 4850, "tasks": ["Demolição concluída", "Canalização revista", "Aplicar revestimento", "Instalar sanitários"] },
+    { "id": 2, "reference": "SRV-027", "title": "Pintura interior T3", "client": "James Wilson", "status": "planeado", "progress": 20, "start": "2026-08-18", "deadline": "2026-08-25", "budget": 2100, "tasks": ["Proteger mobiliário", "Preparar paredes", "Aplicar primário", "Duas demãos"] },
+    { "id": 3, "reference": "SRV-028", "title": "Pavimento flutuante", "client": "Marta Silva", "status": "aguarda_cliente", "progress": 10, "start": "2026-08-24", "deadline": "2026-08-29", "budget": 1650, "tasks": ["Confirmar acabamento", "Encomendar material", "Preparar base", "Instalar rodapé"] },
+    { "id": 4, "reference": "SRV-029", "title": "Manutenção mensal", "client": "Anna Müller", "status": "em_curso", "progress": 45, "start": "2026-08-01", "deadline": "2026-08-31", "budget": 680, "tasks": ["Inspeção interior", "Verificar jardim", "Testar iluminação", "Enviar relatório"] }
+  ],
+  "serviceCatalog": [
+    { "id": 101, "code": "CAT-BANHO", "name": "Renovação de casa de banho", "description": "Renovação completa ou parcial, impermeabilização e acabamentos.", "hourlyRate": 32, "defaultHours": 72, "active": true, "purchaseLists": [
+      { "id": 1001, "name": "Pack renovação standard", "items": [
+        { "id": 1, "name": "Cimento cola flexível", "description": "Saco 25 kg para interior", "supplier": "Leroy Merlin", "url": "https://www.leroymerlin.pt/", "quantity": 4, "unit": "sacos", "unitPrice": 18.5 },
+        { "id": 2, "name": "Impermeabilizante", "description": "Membrana líquida 15 kg", "supplier": "MaxMat", "url": "https://www.maxmat.pt/", "quantity": 2, "unit": "baldes", "unitPrice": 69.9 },
+        { "id": 3, "name": "Azulejo 60×30", "description": "Cerâmica branca mate", "supplier": "MaxMat", "url": "https://www.maxmat.pt/", "quantity": 22, "unit": "m²", "unitPrice": 24.9 }
+      ]},
+      { "id": 1002, "name": "Pack sanitários", "items": [
+        { "id": 4, "name": "Sanita compacta", "description": "Com tanque e tampa soft-close", "supplier": "Sanitop", "url": "https://www.sanitop.pt/", "quantity": 1, "unit": "un.", "unitPrice": 219 },
+        { "id": 5, "name": "Móvel lavatório", "description": "Móvel 80 cm com lavatório", "supplier": "Leroy Merlin", "url": "https://www.leroymerlin.pt/", "quantity": 1, "unit": "un.", "unitPrice": 349 }
+      ]}
+    ]},
+    { "id": 102, "code": "CAT-PINT", "name": "Pintura interior", "description": "Preparação de paredes, primário e acabamento interior.", "hourlyRate": 28, "defaultHours": 32, "active": true, "purchaseLists": [
+      { "id": 1003, "name": "Pack pintura T2/T3", "items": [
+        { "id": 6, "name": "Tinta interior mate", "description": "Branco mate lavável 15 L", "supplier": "CIN", "url": "https://cin.com/", "quantity": 3, "unit": "baldes", "unitPrice": 72 },
+        { "id": 7, "name": "Primário aquoso", "description": "Primário branco 15 L", "supplier": "CIN", "url": "https://cin.com/", "quantity": 1, "unit": "balde", "unitPrice": 58 },
+        { "id": 8, "name": "Fita de pintura", "description": "Fita profissional 48 mm", "supplier": "Leroy Merlin", "url": "https://www.leroymerlin.pt/", "quantity": 8, "unit": "rolos", "unitPrice": 5.2 }
+      ]}
+    ]},
+    { "id": 103, "code": "CAT-PAV", "name": "Instalação de pavimento", "description": "Preparação, instalação de pavimento flutuante e rodapés.", "hourlyRate": 30, "defaultHours": 24, "active": true, "purchaseLists": [
+      { "id": 1004, "name": "Pack pavimento 45 m²", "items": [
+        { "id": 9, "name": "Pavimento carvalho AC5", "description": "Flutuante resistente à água", "supplier": "Revigrés", "url": "https://www.revigres.pt/", "quantity": 48, "unit": "m²", "unitPrice": 29.5 },
+        { "id": 10, "name": "Manta acústica", "description": "Subcapa 2 mm", "supplier": "MaxMat", "url": "https://www.maxmat.pt/", "quantity": 48, "unit": "m²", "unitPrice": 3.25 },
+        { "id": 11, "name": "Rodapé branco", "description": "Rodapé MDF hidrófugo", "supplier": "Leroy Merlin", "url": "https://www.leroymerlin.pt/", "quantity": 42, "unit": "m", "unitPrice": 7.4 }
+      ]}
+    ]}
+  ],
+  "orders": [
+    { "id": 201, "reference": "ENC-031", "serviceCatalogId": 101, "purchaseListId": 1001, "jobReference": "SRV-026", "supplier": "Vários fornecedores", "status": "rascunho", "createdAt": "2026-08-17", "notes": "Confirmar a escolha final do azulejo antes de encomendar." },
+    { "id": 202, "reference": "ENC-030", "serviceCatalogId": 102, "purchaseListId": 1003, "jobReference": "SRV-027", "supplier": "CIN / Leroy Merlin", "status": "encomendado", "createdAt": "2026-08-16", "notes": "Levantamento previsto para 18 de agosto." }
+  ],
+  "materials": [
+    { "id": 1, "serviceId": 1, "name": "Cimento cola flexível", "quantity": 4, "unit": "sacos", "supplier": "Leroy Merlin", "unitPrice": 18.5, "status": "comprado" },
+    { "id": 2, "serviceId": 1, "name": "Azulejo 60×30 branco", "quantity": 22, "unit": "m²", "supplier": "MaxMat", "unitPrice": 24.9, "status": "por_comprar" },
+    { "id": 3, "serviceId": 2, "name": "Tinta interior mate", "quantity": 3, "unit": "baldes", "supplier": "CIN", "unitPrice": 72, "status": "reservado" },
+    { "id": 4, "serviceId": 2, "name": "Fita de pintura", "quantity": 8, "unit": "rolos", "supplier": "Leroy Merlin", "unitPrice": 5.2, "status": "comprado" },
+    { "id": 5, "serviceId": 3, "name": "Pavimento carvalho AC5", "quantity": 48, "unit": "m²", "supplier": "Revigrés", "unitPrice": 29.5, "status": "por_comprar" },
+    { "id": 6, "serviceId": 4, "name": "Programador de rega", "quantity": 1, "unit": "un.", "supplier": "Agriloja", "unitPrice": 54.9, "status": "por_comprar" }
+  ],
+  "quotes": [
+    { "id": 1, "reference": "ORC-104", "client": "Rui Costa", "service": "Pladur e tetos falsos", "location": "Setúbal", "date": "2026-08-17", "status": "novo", "estimate": 1250, "description": "Teto falso com iluminação embutida numa sala de 28 m²." },
+    { "id": 2, "reference": "ORC-103", "client": "Helen Brown", "service": "Manutenção de casa de férias", "location": "Sesimbra", "date": "2026-08-16", "status": "em_analise", "estimate": 420, "description": "Inspeção mensal, jardim e apoio entre estadias." },
+    { "id": 3, "reference": "ORC-102", "client": "Pedro Martins", "service": "Renovação de casa de banho", "location": "Palmela", "date": "2026-08-14", "status": "enviado", "estimate": 3900, "description": "Renovação completa de WC com 5 m².", "serviceCatalogId": 101, "purchaseListId": 1001, "hours": 72, "hourlyRate": 32, "margin": 18 },
+    { "id": 4, "reference": "ORC-101", "client": "Laura Schmidt", "service": "Pintura exterior", "location": "Azeitão", "date": "2026-08-12", "status": "aceite", "estimate": 2800, "description": "Pintura de fachada e muros exteriores.", "serviceCatalogId": 102, "purchaseListId": 1003, "hours": 48, "hourlyRate": 28, "margin": 15 }
+  ],
+  "activity": [
+    { "id": 1, "text": "Orçamento ORC-104 recebido", "time": "Há 35 min" },
+    { "id": 2, "text": "Material marcado como comprado", "time": "Há 2 h" },
+    { "id": 3, "text": "Visita de Sofia confirmada", "time": "Ontem" },
+    { "id": 4, "text": "Progresso de SRV-026 atualizado", "time": "Ontem" }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "martins_backoffice": {
+      "command": "php",
+      "args": ["C:/laragon/www/REACTPORTFOLIOWORKS/SiteGervas/plugins/martins-backoffice/mcp/server.php"],
+      "cwd": "C:/laragon/www/REACTPORTFOLIOWORKS/SiteGervas"
+    }
+  }
+}
