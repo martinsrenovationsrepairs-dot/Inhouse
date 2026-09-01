@@ -259,8 +259,55 @@ const schema = [
   ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci`,
 ]
 
+const scopedTables = [
+  'clients', 'quote_requests', 'service_jobs', 'service_job_tasks', 'appointments',
+  'customer_messages', 'service_catalog', 'purchase_lists', 'purchase_list_items',
+  'material_items', 'orders', 'order_items', 'quotes', 'backoffice_audit_logs',
+]
+
+async function columnExists(table, column) {
+  const [rows] = await db.query(
+    `SELECT 1 FROM information_schema.columns
+     WHERE table_schema = ? AND table_name = ? AND column_name = ? LIMIT 1`,
+    [config.database.database, table, column],
+  )
+  return Boolean(rows[0])
+}
+
+async function indexExists(table, index) {
+  const [rows] = await db.query(
+    `SELECT 1 FROM information_schema.statistics
+     WHERE table_schema = ? AND table_name = ? AND index_name = ? LIMIT 1`,
+    [config.database.database, table, index],
+  )
+  return Boolean(rows[0])
+}
+
+async function upgradeLegacySchema() {
+  for (const table of scopedTables) {
+    if (!(await columnExists(table, 'data_scope'))) {
+      await db.query(`ALTER TABLE \`${table}\` ADD COLUMN data_scope ENUM('real','demo') NOT NULL DEFAULT 'real' AFTER id`)
+    }
+    const scopeIndex = `idx_${table}_scope`
+    if (!(await indexExists(table, scopeIndex))) {
+      await db.query(`ALTER TABLE \`${table}\` ADD INDEX \`${scopeIndex}\` (data_scope)`)
+    }
+  }
+
+  if ((await columnExists('backoffice_settings', 'key')) && !(await columnExists('backoffice_settings', 'setting_key'))) {
+    await db.query('ALTER TABLE backoffice_settings RENAME COLUMN `key` TO setting_key')
+  }
+  if ((await columnExists('backoffice_settings', 'value')) && !(await columnExists('backoffice_settings', 'setting_value'))) {
+    await db.query('ALTER TABLE backoffice_settings RENAME COLUMN `value` TO setting_value')
+  }
+  if ((await columnExists('backoffice_settings', 'group')) && !(await columnExists('backoffice_settings', 'setting_group'))) {
+    await db.query('ALTER TABLE backoffice_settings RENAME COLUMN `group` TO setting_group')
+  }
+}
+
 export async function migrate() {
   for (const statement of schema) await db.query(statement)
+  await upgradeLegacySchema()
   await db.query(
     `INSERT INTO app_settings (setting_key, setting_value)
      VALUES ('demo_mode', JSON_EXTRACT('false', '$'))
