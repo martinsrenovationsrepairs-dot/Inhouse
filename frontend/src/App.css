@@ -9,9 +9,10 @@
 .public-site { min-height: 100vh; }
 .site-header { position: sticky; z-index: 50; top: 0; background: rgb(248 246 241 / 94%); border-bottom: 1px solid transparent; backdrop-filter: blur(12px); }
 .header-inner { width: min(1440px, calc(100% - 64px)); height: 94px; margin: auto; display: flex; align-items: center; justify-content: space-between; }
-.brand { display: inline-flex; flex-direction: column; color: var(--ink); text-decoration: none; line-height: 1; letter-spacing: .08em; }
+.brand { display: inline-flex; align-items: center; color: var(--ink); text-decoration: none; line-height: 1; letter-spacing: .08em; }
 .brand strong { font-family: 'Archivo Black', sans-serif; font-size: 1.85rem; letter-spacing: .12em; }
 .brand span { margin-top: 7px; color: var(--green); font-size: .78rem; font-weight: 800; letter-spacing: .18em; }
+.header-logo { display: block; height: 58px; width: auto; max-width: 220px; object-fit: contain; }
 .nav { display: flex; align-items: center; gap: clamp(14px, 1.5vw, 28px); }
 .nav > a:not(.button) { position: relative; font-size: .9rem; text-decoration: none; white-space: nowrap; }
 .nav > a:not(.button)::after { content: ''; position: absolute; right: 0; bottom: -8px; left: 0; height: 2px; background: var(--green); transform: scaleX(0); transition: transform .2s; }
@@ -29,8 +30,8 @@
 .hero { width: min(1440px, calc(100% - 64px)); min-height: 680px; margin: 0 auto; display: grid; grid-template-columns: .9fr 1.1fr; align-items: center; gap: 58px; padding: 40px 0 76px; }
 .hero-copy { position: relative; z-index: 2; }
 h1, h2 { font-family: 'Archivo Black', sans-serif; text-transform: uppercase; letter-spacing: -.055em; line-height: .98; }
-.hero h1 { margin: 0; font-size: clamp(3.3rem, 5vw, 6rem); }
-.hero-copy > p { max-width: 650px; margin: 28px 0 32px; color: #565650; font-size: 1.08rem; line-height: 1.65; }
+.hero h1 { margin: 0; font-size: clamp(3.1rem, 4.4vw, 5.2rem); line-height: .98; }
+.hero-copy > p { max-width: 650px; margin: 26px 0 32px; color: #565650; font-size: 1.08rem; line-height: 1.65; }
 .hero-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 14px; }
 .text-link { min-height: 50px; display: inline-flex; align-items: center; gap: 9px; color: var(--green); font-weight: 700; text-decoration: none; }
 .text-link svg { width: 18px; }
@@ -141,6 +142,7 @@ h1, h2 { font-family: 'Archivo Black', sans-serif; text-transform: uppercase; le
 
 @media (max-width: 1120px) {
   .header-inner { width: min(100% - 36px, 1440px); height: 78px; }
+  .header-logo { height: 46px; }
   .brand strong { font-size: 1.45rem; }
   .brand span { font-size: .62rem; }
   .menu-button { display: grid; place-items: center; }
@@ -162,7 +164,7 @@ h1, h2 { font-family: 'Archivo Black', sans-serif; text-transform: uppercase; le
   .section, .page-intro, .quote-layout { width: calc(100% - 36px); }
   .section { padding: 72px 0; }
   .hero { min-height: auto; gap: 38px; padding: 42px 0 64px; }
-  .hero h1 { max-width: 100%; font-size: clamp(2.3rem, 10.5vw, 4.4rem); overflow-wrap: normal; word-break: normal; }
+  .hero h1 { max-width: 100%; font-size: clamp(1.9rem, 8vw, 3.2rem); overflow-wrap: normal; word-break: normal; }
   .hero-media { padding: 0 14px 14px 0; }
   .hero-media img { height: 380px; }
   .hero-actions { align-items: stretch; flex-direction: column; }

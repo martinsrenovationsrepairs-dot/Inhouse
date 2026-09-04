@@ -15,7 +15,7 @@ export const services = [
 export const translations = {
   en: {
     nav: { home: 'Home', services: 'Services', work: 'Our Work', holiday: 'Holiday Homes', about: 'About', reviews: 'Reviews', contact: 'Contact', quote: 'Request a Quote' },
-    hero: { title: 'Reliable & Professional Home Renovation, Repairs & Maintenance in Setúbal.', body: 'One trusted local partner for renovations, repairs, installations and property maintenance. We communicate in Portuguese, English and German.', quote: 'Request a Quote', whatsapp: 'WhatsApp Us', call: `Call ${phoneDisplay}` },
+    hero: { title: 'Reliable & Professional Home Renovation, Repairs & Maintenance in the Setúbal Area.', body: 'One trusted local partner for renovations, repairs, installations and property maintenance. We communicate in Portuguese, English and German.', quote: 'Request a Quote', whatsapp: 'WhatsApp Us', call: `Call ${phoneDisplay}` },
     serviceSection: { label: 'Our services', title: 'Complete home services, built around your needs.', intro: 'From a single repair to a complete room renovation, we take care of the details with practical advice and careful workmanship.', view: 'Explore all services' },
     services: {
       drywall: ['Drywall & Ceilings', 'Installation and repair of plasterboard walls, suspended ceilings, partitions and smooth finishes.'],
@@ -27,7 +27,7 @@ export const translations = {
       garden: ['Gardening & Outdoor', 'Garden maintenance, outdoor installations, lighting and practical improvement work.'],
     },
     work: { label: 'Selected work', title: 'Careful finishes. Practical results.', body: 'A preview of the type of renovation and finishing work we provide. These demonstration images will be replaced with verified project photography.', bathroom: 'Bathroom renovation', painting: 'Interior painting', flooring: 'Flooring installation', note: 'Project photography coming soon' },
-    holiday: { title: 'Your local property partner — even when you are not here.', body: 'Own a property in Setúbal but do not live here full-time? We provide reliable renovation, repair and maintenance support for international homeowners, holiday properties, landlords and property managers.', items: ['Property preparation before your arrival', 'Repairs and touch-ups between guest stays', 'Regular maintenance and outdoor work', 'Project coordination while you are abroad'], cta: 'Holiday home services' },
+    holiday: { title: 'Your local property partner — even when you are not here.', body: 'Own a property in the Setúbal area but do not live here full-time? We provide reliable renovation, repair and maintenance support for international homeowners, holiday properties, landlords and property managers.', items: ['Property preparation before your arrival', 'Repairs and touch-ups between guest stays', 'Regular maintenance and outdoor work', 'Project coordination while you are abroad'], cta: 'Holiday home services' },
     why: { label: 'Why Martins', title: 'Work you can rely on.', items: [['Reliable', 'Clear communication and dependable service.'], ['Professional', 'Careful workmanship and attention to detail.'], ['Quality', 'Clean, practical and durable results.'], ['Multiple services', 'One trusted team for many home needs.'], ['Respectful', 'We treat your property with care.'], ['Multilingual', 'Português, English and Deutsch.']] },
     about: { title: 'Local service, professional standards.', body: 'Martins In House Services brings renovation, repair, installation and maintenance work together under one dependable local service. Our approach is straightforward: understand the job, communicate clearly, protect the home and deliver a clean, practical result.', values: ['Honest and clear communication', 'Careful planning before work begins', 'Respect for your home and schedule', 'A practical solution for every project'] },
     reviews: { title: 'Trust is built one project at a time.', empty: 'Verified customer reviews will appear here as projects are completed.', quote: 'Clear communication, careful work and a home left clean and ready to enjoy.', author: 'Our service promise' },
@@ -42,7 +42,7 @@ export const translations = {
 translations.pt = {
   ...translations.en,
   nav: { home: 'Início', services: 'Serviços', work: 'Trabalhos', holiday: 'Casas de Férias', about: 'Sobre Nós', reviews: 'Avaliações', contact: 'Contacto', quote: 'Pedir Orçamento' },
-  hero: { title: 'Renovação, reparação e manutenção profissional em Setúbal.', body: 'Um parceiro local de confiança para renovações, reparações, instalações e manutenção de imóveis. Comunicamos em português, inglês e alemão.', quote: 'Pedir Orçamento', whatsapp: 'Falar no WhatsApp', call: `Ligar ${phoneDisplay}` },
+  hero: { title: 'Renovação, reparação e manutenção profissional na área de Setúbal.', body: 'Um parceiro local de confiança para renovações, reparações, instalações e manutenção de imóveis. Comunicamos em português, inglês e alemão.', quote: 'Pedir Orçamento', whatsapp: 'Falar no WhatsApp', call: `Ligar ${phoneDisplay}` },
   serviceSection: { label: 'Os nossos serviços', title: 'Todos os serviços para a sua casa, num só lugar.', intro: 'De uma pequena reparação à renovação completa de uma divisão, tratamos de cada detalhe com aconselhamento prático e trabalho cuidado.', view: 'Ver todos os serviços' },
   services: {
     drywall: ['Pladur e Tetos Falsos', 'Instalação e reparação de paredes em pladur, tetos falsos, divisórias e acabamentos lisos.'],
@@ -54,7 +54,7 @@ translations.pt = {
     garden: ['Jardins e Exteriores', 'Manutenção de jardins, instalações exteriores, iluminação e melhorias práticas.'],
   },
   work: { label: 'Trabalhos selecionados', title: 'Acabamentos cuidados. Resultados práticos.', body: 'Uma amostra do tipo de renovação e acabamento que realizamos. Estas imagens de demonstração serão substituídas por fotografias verificadas dos projetos.', bathroom: 'Renovação de casa de banho', painting: 'Pintura interior', flooring: 'Instalação de pavimento', note: 'Fotografias de projetos em breve' },
-  holiday: { title: 'O seu parceiro local — mesmo quando está longe.', body: 'Tem uma propriedade em Setúbal mas não vive cá todo o ano? Prestamos apoio de renovação, reparação e manutenção a proprietários internacionais, alojamentos de férias, senhorios e gestores de imóveis.', items: ['Preparação antes da chegada do proprietário', 'Reparações entre estadias de hóspedes', 'Manutenção regular e trabalhos exteriores', 'Coordenação de projetos enquanto está no estrangeiro'], cta: 'Serviços para casas de férias' },
+  holiday: { title: 'O seu parceiro local — mesmo quando está longe.', body: 'Tem uma propriedade na área de Setúbal mas não vive cá todo o ano? Prestamos apoio de renovação, reparação e manutenção a proprietários internacionais, alojamentos de férias, senhorios e gestores de imóveis.', items: ['Preparação antes da chegada do proprietário', 'Reparações entre estadias de hóspedes', 'Manutenção regular e trabalhos exteriores', 'Coordenação de projetos enquanto está no estrangeiro'], cta: 'Serviços para casas de férias' },
   why: { label: 'Porquê a Martins', title: 'Trabalho em que pode confiar.', items: [['Fiável', 'Comunicação clara e serviço pontual.'], ['Profissional', 'Trabalho cuidado e atenção ao detalhe.'], ['Qualidade', 'Resultados limpos, práticos e duradouros.'], ['Vários serviços', 'Uma equipa para várias necessidades.'], ['Respeito', 'Cuidamos da sua propriedade.'], ['Multilingue', 'Português, English e Deutsch.']] },
   about: { title: 'Serviço local, padrões profissionais.', body: 'A Martins In House Services reúne renovação, reparação, instalação e manutenção num serviço local de confiança. A nossa abordagem é simples: compreender o trabalho, comunicar com clareza, proteger a casa e entregar um resultado limpo e prático.', values: ['Comunicação honesta e clara', 'Planeamento cuidado antes do início', 'Respeito pela sua casa e horários', 'Uma solução prática para cada projeto'] },
   reviews: { title: 'A confiança constrói-se projeto a projeto.', empty: 'As avaliações verificadas de clientes serão apresentadas aqui à medida que os projetos forem concluídos.', quote: 'Comunicação clara, trabalho cuidado e uma casa limpa e pronta a utilizar.', author: 'O nosso compromisso' },
@@ -68,7 +68,7 @@ translations.pt = {
 translations.de = {
   ...translations.en,
   nav: { home: 'Start', services: 'Leistungen', work: 'Projekte', holiday: 'Ferienimmobilien', about: 'Über uns', reviews: 'Bewertungen', contact: 'Kontakt', quote: 'Angebot anfragen' },
-  hero: { title: 'Zuverlässige & professionelle Renovierung, Reparatur und Instandhaltung in Setúbal.', body: 'Ihr zuverlässiger Partner vor Ort für Renovierungen, Reparaturen, Installationen und Immobilienpflege. Wir sprechen Portugiesisch, Englisch und Deutsch.', quote: 'Angebot anfragen', whatsapp: 'WhatsApp', call: `Anrufen ${phoneDisplay}` },
+  hero: { title: 'Zuverlässige & professionelle Renovierung, Reparatur und Instandhaltung im Raum Setúbal.', body: 'Ihr zuverlässiger Partner vor Ort für Renovierungen, Reparaturen, Installationen und Immobilienpflege. Wir sprechen Portugiesisch, Englisch und Deutsch.', quote: 'Angebot anfragen', whatsapp: 'WhatsApp', call: `Anrufen ${phoneDisplay}` },
   serviceSection: { label: 'Unsere Leistungen', title: 'Kompletter Hausservice, abgestimmt auf Ihren Bedarf.', intro: 'Von einer kleinen Reparatur bis zur vollständigen Raumrenovierung kümmern wir uns mit klarer Beratung und sorgfältiger Arbeit um jedes Detail.', view: 'Alle Leistungen' },
   services: {
     drywall: ['Trockenbau & Decken', 'Montage und Reparatur von Gipskartonwänden, abgehängten Decken, Trennwänden und Oberflächen.'],
@@ -80,7 +80,7 @@ translations.de = {
     garden: ['Garten & Außenbereich', 'Gartenpflege, Außeninstallationen, Beleuchtung und praktische Verbesserungen.'],
   },
   work: { label: 'Ausgewählte Arbeiten', title: 'Sorgfältige Ausführung. Praktische Ergebnisse.', body: 'Ein Einblick in unsere Renovierungs- und Ausbauarbeiten. Diese Beispielbilder werden durch verifizierte Projektfotos ersetzt.', bathroom: 'Badrenovierung', painting: 'Innenanstrich', flooring: 'Bodenverlegung', note: 'Projektfotos folgen' },
-  holiday: { title: 'Ihr Partner vor Ort — auch wenn Sie nicht da sind.', body: 'Sie besitzen eine Immobilie in Setúbal, leben aber nicht ganzjährig hier? Wir unterstützen internationale Eigentümer, Ferienimmobilien, Vermieter und Hausverwaltungen zuverlässig.', items: ['Vorbereitung vor Ihrer Ankunft', 'Reparaturen zwischen Gästeaufenthalten', 'Regelmäßige Wartung und Außenarbeiten', 'Projektkoordination während Ihrer Abwesenheit'], cta: 'Service für Ferienimmobilien' },
+  holiday: { title: 'Ihr Partner vor Ort — auch wenn Sie nicht da sind.', body: 'Sie besitzen eine Immobilie im Raum Setúbal, leben aber nicht ganzjährig hier? Wir unterstützen internationale Eigentümer, Ferienimmobilien, Vermieter und Hausverwaltungen zuverlässig.', items: ['Vorbereitung vor Ihrer Ankunft', 'Reparaturen zwischen Gästeaufenthalten', 'Regelmäßige Wartung und Außenarbeiten', 'Projektkoordination während Ihrer Abwesenheit'], cta: 'Service für Ferienimmobilien' },
   why: { label: 'Warum Martins', title: 'Arbeit, auf die Sie sich verlassen können.', items: [['Zuverlässig', 'Klare Kommunikation und verbindlicher Service.'], ['Professionell', 'Sorgfalt und Liebe zum Detail.'], ['Qualität', 'Saubere, praktische und langlebige Ergebnisse.'], ['Viele Leistungen', 'Ein Team für viele Aufgaben.'], ['Respektvoll', 'Wir behandeln Ihr Eigentum sorgfältig.'], ['Mehrsprachig', 'Português, English und Deutsch.']] },
   about: { title: 'Lokaler Service, professionelle Standards.', body: 'Martins In House Services verbindet Renovierung, Reparatur, Installation und Instandhaltung in einem zuverlässigen lokalen Service. Wir verstehen die Aufgabe, kommunizieren klar, schützen Ihr Zuhause und liefern ein sauberes Ergebnis.', values: ['Ehrliche, klare Kommunikation', 'Sorgfältige Planung', 'Respekt für Ihr Zuhause und Ihre Zeit', 'Praktische Lösungen für jedes Projekt'] },
   reviews: { title: 'Vertrauen entsteht mit jedem Projekt.', empty: 'Verifizierte Kundenbewertungen erscheinen hier nach Abschluss der ersten Projekte.', quote: 'Klare Kommunikation, sorgfältige Arbeit und ein sauberes, bezugsfertiges Zuhause.', author: 'Unser Serviceversprechen' },
@@ -93,9 +93,9 @@ translations.de = {
 
 export function whatsappUrl(language = 'en') {
   const messages = {
-    pt: 'Olá, gostaria de pedir um orçamento para um trabalho em Setúbal.',
-    en: 'Hello, I would like to request a quote for work in Setúbal.',
-    de: 'Hallo, ich möchte ein Angebot für Arbeiten in Setúbal anfragen.',
+    pt: 'Olá, gostaria de pedir um orçamento para um trabalho na área de Setúbal.',
+    en: 'Hello, I would like to request a quote for work in the Setúbal area.',
+    de: 'Hallo, ich möchte ein Angebot für Arbeiten im Raum Setúbal anfragen.',
   }
   return `https://wa.me/351934793058?text=${encodeURIComponent(messages[language])}`
 }

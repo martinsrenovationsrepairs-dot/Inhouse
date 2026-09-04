@@ -14,7 +14,7 @@ const whyIcons = [ShieldCheck, UserCheck, BadgeCheck, House, HeartHandshake, Lan
 const Icons = { UploadCloud, ArrowRight }
 
 function Brand() {
-  return <Link className="brand" to="/" aria-label="Martins In House Services"><strong>MARTINS</strong><span>IN HOUSE SERVICES</span></Link>
+  return <Link className="brand" to="/" aria-label="Martins In House Services"><img src="/images/martins-logo-header.png" alt="Martins In House Services" className="header-logo" /></Link>
 }
 
 function Header() {
