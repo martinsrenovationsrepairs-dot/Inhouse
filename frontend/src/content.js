@@ -15,7 +15,7 @@ export const services = [
 export const translations = {
   en: {
     nav: { home: 'Home', services: 'Services', work: 'Our Work', holiday: 'Holiday Homes', about: 'About', reviews: 'Reviews', contact: 'Contact', quote: 'Request a Quote' },
-    hero: { title: 'Reliable & Professional Home Renovation, Repairs & Maintenance in the Setúbal Area.', body: 'One trusted local partner for renovations, repairs, installations and property maintenance. We communicate in Portuguese, English and German.', quote: 'Request a Quote', whatsapp: 'WhatsApp Us', call: `Call ${phoneDisplay}` },
+    hero: { title: 'Reliable & Professional Home Renovation, Repairs & Maintenance in the Setúbal Area.', body: 'One trusted local partner for renovations, repairs, installations and property maintenance. We communicate in Portuguese, English and German.', quote: 'Request a Quote', whatsapp: 'WhatsApp Us', call: `Call now: ${phoneDisplay}` },
     serviceSection: { label: 'Our services', title: 'Complete home services, built around your needs.', intro: 'From a single repair to a complete room renovation, we take care of the details with practical advice and careful workmanship.', view: 'Explore all services' },
     services: {
       drywall: ['Drywall & Ceilings', 'Installation and repair of plasterboard walls, suspended ceilings, partitions and smooth finishes.'],
@@ -42,7 +42,7 @@ export const translations = {
 translations.pt = {
   ...translations.en,
   nav: { home: 'Início', services: 'Serviços', work: 'Trabalhos', holiday: 'Casas de Férias', about: 'Sobre Nós', reviews: 'Avaliações', contact: 'Contacto', quote: 'Pedir Orçamento' },
-  hero: { title: 'Renovação, reparação e manutenção profissional na área de Setúbal.', body: 'Um parceiro local de confiança para renovações, reparações, instalações e manutenção de imóveis. Comunicamos em português, inglês e alemão.', quote: 'Pedir Orçamento', whatsapp: 'Falar no WhatsApp', call: `Ligar ${phoneDisplay}` },
+  hero: { title: 'Renovação, reparação e manutenção profissional na área de Setúbal.', body: 'Um parceiro local de confiança para renovações, reparações, instalações e manutenção de imóveis. Comunicamos em português, inglês e alemão.', quote: 'Pedir Orçamento', whatsapp: 'Falar no WhatsApp', call: `Ligue já: ${phoneDisplay}` },
   serviceSection: { label: 'Os nossos serviços', title: 'Todos os serviços para a sua casa, num só lugar.', intro: 'De uma pequena reparação à renovação completa de uma divisão, tratamos de cada detalhe com aconselhamento prático e trabalho cuidado.', view: 'Ver todos os serviços' },
   services: {
     drywall: ['Pladur e Tetos Falsos', 'Instalação e reparação de paredes em pladur, tetos falsos, divisórias e acabamentos lisos.'],
@@ -68,7 +68,7 @@ translations.pt = {
 translations.de = {
   ...translations.en,
   nav: { home: 'Start', services: 'Leistungen', work: 'Projekte', holiday: 'Ferienimmobilien', about: 'Über uns', reviews: 'Bewertungen', contact: 'Kontakt', quote: 'Angebot anfragen' },
-  hero: { title: 'Zuverlässige & professionelle Renovierung, Reparatur und Instandhaltung im Raum Setúbal.', body: 'Ihr zuverlässiger Partner vor Ort für Renovierungen, Reparaturen, Installationen und Immobilienpflege. Wir sprechen Portugiesisch, Englisch und Deutsch.', quote: 'Angebot anfragen', whatsapp: 'WhatsApp', call: `Anrufen ${phoneDisplay}` },
+  hero: { title: 'Zuverlässige & professionelle Renovierung, Reparatur und Instandhaltung im Raum Setúbal.', body: 'Ihr zuverlässiger Partner vor Ort für Renovierungen, Reparaturen, Installationen und Immobilienpflege. Wir sprechen Portugiesisch, Englisch und Deutsch.', quote: 'Angebot anfragen', whatsapp: 'WhatsApp', call: `Jetzt anrufen: ${phoneDisplay}` },
   serviceSection: { label: 'Unsere Leistungen', title: 'Kompletter Hausservice, abgestimmt auf Ihren Bedarf.', intro: 'Von einer kleinen Reparatur bis zur vollständigen Raumrenovierung kümmern wir uns mit klarer Beratung und sorgfältiger Arbeit um jedes Detail.', view: 'Alle Leistungen' },
   services: {
     drywall: ['Trockenbau & Decken', 'Montage und Reparatur von Gipskartonwänden, abgehängten Decken, Trennwänden und Oberflächen.'],
