@@ -1,6 +1,6 @@
 export const phoneDisplay = '934 793 058'
 export const phoneHref = 'tel:+351934793058'
-export const email = import.meta.env.VITE_CONTACT_EMAIL || 'contact@example.com'
+export const email = import.meta.env.VITE_CONTACT_EMAIL || 'martins.renovations.repairs@gmail.com'
 
 export const services = [
   { id: 'drywall', icon: 'PanelsTopLeft' },

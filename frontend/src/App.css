@@ -130,7 +130,7 @@ h1, h2 { font-family: 'Archivo Black', sans-serif; text-transform: uppercase; le
 .footer .brand { color: white; }
 .footer .brand span { color: #f3a182; }
 .footer-brand { display: inline-block; text-decoration: none; margin-bottom: 12px; }
-.footer-logo { display: block; height: 58px; width: auto; max-width: 220px; object-fit: contain; border-radius: 4px; }
+.footer-logo { display: block; height: 68px; width: auto; max-width: 240px; object-fit: contain; }
 .footer-grid { display: grid; grid-template-columns: 1.3fr .6fr 1fr; gap: 70px; }
 .footer-grid p { max-width: 350px; color: #bdc9c2; line-height: 1.6; }
 .footer-grid nav, .footer-contact { display: flex; flex-direction: column; gap: 14px; }
