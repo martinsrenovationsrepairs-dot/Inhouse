@@ -2,7 +2,7 @@
 .links-card { width: min(100%, 390px); overflow: hidden; border: 1px solid #d1d0c7; border-radius: 22px; background: #f8f7ef; box-shadow: 0 24px 70px rgb(13 41 28 / 16%); }
 .links-profile { min-height: 270px; padding: 26px 22px 24px; display: flex; align-items: center; flex-direction: column; justify-content: center; color: white; background: #0b2c1e; text-align: center; }
 .links-logo { width: min(195px, 70%); height: auto; margin-bottom: 16px; }
-.links-tagline { max-width: 310px; margin: 0; font-size: .77rem; font-weight: 700; line-height: 1.5; letter-spacing: .035em; text-align: center; }
+.links-tagline { max-width: 310px; margin: 0; font-size: .77rem; font-weight: 700; line-height: 1.5; letter-spacing: .035em; text-align: center; white-space: pre-line; }
 .links-location { margin: 8px 0 0; display: inline-flex; align-items: center; gap: 5px; font-size: .83rem; }
 .links-location svg { width: 14px; height: 14px; }
 .links-languages { padding: 13px 16px 3px; display: flex; justify-content: center; gap: 8px; background: #f8f7ef; }
