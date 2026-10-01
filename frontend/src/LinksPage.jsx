@@ -1,4 +1,4 @@
-import { Facebook, Globe2, Instagram, Mail, MapPin, MessageCircle, Phone, House } from 'lucide-react'
+import { Camera, Globe2, Mail, MapPin, MessageCircle, Phone, House, UsersRound } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { phoneDisplay, phoneHref, whatsappUrl } from './content'
 import './LinksPage.css'
@@ -35,8 +35,8 @@ export default function LinksPage({ language = 'en' }) {
         <LinkButton href={phoneHref} icon={Phone} primary>{labels.call} ({phoneDisplay})</LinkButton>
         <LinkButton href={whatsappUrl(language)} icon={MessageCircle} external>{labels.whatsapp}</LinkButton>
         <Link to="/quote" className="links-button"><Mail aria-hidden="true" /><span>{labels.quote}</span></Link>
-        {instagramUrl ? <LinkButton href={instagramUrl} icon={Instagram} external>{labels.instagram}</LinkButton> : null}
-        {facebookUrl ? <LinkButton href={facebookUrl} icon={Facebook} external>{labels.facebook}</LinkButton> : null}
+        {instagramUrl ? <LinkButton href={instagramUrl} icon={Camera} external>{labels.instagram}</LinkButton> : null}
+        {facebookUrl ? <LinkButton href={facebookUrl} icon={UsersRound} external>{labels.facebook}</LinkButton> : null}
         <a href={websiteUrl} className="links-button"><House aria-hidden="true" /><span>{labels.website}</span><Globe2 aria-hidden="true" className="links-end-icon" /></a>
       </nav>
       <footer className="links-footer">© MARTINS IN HOUSE SERVICES</footer>
