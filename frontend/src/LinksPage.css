@@ -5,6 +5,10 @@
 .links-tagline { margin: 0; font-size: .77rem; font-weight: 700; line-height: 1.5; letter-spacing: .035em; }
 .links-location { margin: 8px 0 0; display: inline-flex; align-items: center; gap: 5px; font-size: .83rem; }
 .links-location svg { width: 14px; height: 14px; }
+.links-languages { padding: 13px 16px 3px; display: flex; justify-content: center; gap: 8px; background: #f8f7ef; }
+.links-languages button { min-width: 48px; min-height: 34px; border: 1px solid #c4c4b9; border-radius: 8px; color: #4c514d; background: transparent; font-size: .72rem; font-weight: 700; cursor: pointer; }
+.links-languages button.active { border-color: #0b2c1e; color: white; background: #0b2c1e; }
+.links-languages button:focus-visible { outline: 3px solid #d85d2f; outline-offset: 2px; }
 .links-list { padding: 4px 15px 8px; display: grid; gap: 9px; }
 .links-button { position: relative; min-height: 46px; padding: 0 15px; display: flex; align-items: center; justify-content: center; gap: 10px; border: 1px solid #c4c4b9; border-radius: 12px; color: #171a17; background: #f8f7ef; box-shadow: 0 2px 4px rgb(0 0 0 / 10%); font-size: .76rem; font-weight: 700; text-align: center; text-decoration: none; transition: transform .18s ease, box-shadow .18s ease, background .18s ease; }
 .links-button:hover { transform: translateY(-2px); background: white; box-shadow: 0 5px 12px rgb(0 0 0 / 13%); }

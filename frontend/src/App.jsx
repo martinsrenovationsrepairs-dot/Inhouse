@@ -58,8 +58,8 @@ function Seo() {
     const description = descriptions[pathname] || t.footer.promise
     const siteUrl = String(import.meta.env.VITE_SITE_URL || location.origin).replace(/\/$/, '')
     const canonical = `${siteUrl}${pathname === '/' ? '/' : pathname}`
-    document.title = title
-    document.documentElement.lang = language
+    if (pathname !== '/links') document.title = title
+    if (pathname !== '/links') document.documentElement.lang = language
     document.querySelector('meta[name="description"]')?.setAttribute('content', description)
     document.querySelector('meta[property="og:title"]')?.setAttribute('content', title)
     document.querySelector('meta[property="og:description"]')?.setAttribute('content', description)
@@ -70,12 +70,11 @@ function Seo() {
 }
 
 function Layout({ children }) {
-  const { language } = useLanguage()
   const location = useLocation()
   const publicSiteRef = useRef(null)
   usePublicMotion(publicSiteRef, location.pathname)
   useEffect(() => { window.scrollTo({ top: 0, behavior: 'instant' }) }, [location.pathname])
-  if (location.pathname === '/links') return <div className="public-site"><Seo /><LinksPage language={language} /></div>
+  if (location.pathname === '/links') return <div className="public-site"><Seo /><LinksPage /></div>
   return <div ref={publicSiteRef} className="public-site"><Seo /><SiteLoader /><Header />{children}<Footer /><MobileActions /></div>
 }
 
