@@ -1,0 +1,18 @@
+.links-page { min-height: 100vh; display: grid; place-items: center; padding: 36px 18px; background: radial-gradient(ellipse at center, #fff 0%, #f1f0e9 75%); }
+.links-card { width: min(100%, 390px); overflow: hidden; border: 1px solid #d1d0c7; border-radius: 22px; background: #f8f7ef; box-shadow: 0 24px 70px rgb(13 41 28 / 16%); }
+.links-profile { min-height: 270px; padding: 26px 22px 24px; display: flex; align-items: center; flex-direction: column; justify-content: center; color: white; background: #0b2c1e; text-align: center; }
+.links-logo { width: min(195px, 70%); height: auto; margin-bottom: 16px; }
+.links-tagline { margin: 0; font-size: .77rem; font-weight: 700; line-height: 1.5; letter-spacing: .035em; }
+.links-location { margin: 8px 0 0; display: inline-flex; align-items: center; gap: 5px; font-size: .83rem; }
+.links-location svg { width: 14px; height: 14px; }
+.links-list { padding: 4px 15px 8px; display: grid; gap: 9px; }
+.links-button { position: relative; min-height: 46px; padding: 0 15px; display: flex; align-items: center; justify-content: center; gap: 10px; border: 1px solid #c4c4b9; border-radius: 12px; color: #171a17; background: #f8f7ef; box-shadow: 0 2px 4px rgb(0 0 0 / 10%); font-size: .76rem; font-weight: 700; text-align: center; text-decoration: none; transition: transform .18s ease, box-shadow .18s ease, background .18s ease; }
+.links-button:hover { transform: translateY(-2px); background: white; box-shadow: 0 5px 12px rgb(0 0 0 / 13%); }
+.links-button:focus-visible { outline: 3px solid #d85d2f; outline-offset: 3px; }
+.links-button > svg { width: 17px; height: 17px; flex: 0 0 17px; }
+.links-button--primary { border-color: #c96131; color: white; background: #c96131; }
+.links-button--primary:hover { background: #b84d25; }
+.links-end-icon { position: absolute; right: 15px; }
+.links-footer { padding: 4px 12px 15px; color: #c7d0c9; background: #0b2c1e; font-size: .58rem; font-weight: 600; letter-spacing: .08em; text-align: center; }
+@media (max-width: 480px) { .links-page { padding: 0; background: #0b2c1e; } .links-card { width: 100%; min-height: 100vh; display: flex; flex-direction: column; justify-content: center; border: 0; border-radius: 0; box-shadow: none; } .links-profile { min-height: 265px; } .links-list { flex: 0 0 auto; padding: 12px 16px 14px; } .links-button { min-height: 48px; } .links-footer { padding-bottom: 18px; } }
+@media (prefers-reduced-motion: reduce) { .links-button { transition: none; } }

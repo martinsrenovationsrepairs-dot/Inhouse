@@ -6,6 +6,7 @@ import './App.css'
 import Admin from './Admin'
 import SiteLoader from './SiteLoader'
 import usePublicMotion from './usePublicMotion'
+import LinksPage from './LinksPage'
 
 const LanguageContext = createContext(null)
 const useLanguage = () => useContext(LanguageContext)
@@ -51,7 +52,7 @@ function Seo() {
   const { language, t } = useLanguage()
   const { pathname } = useLocation()
   useEffect(() => {
-    const titles = { '/': t.hero.title, '/services': t.nav.services, '/work': t.nav.work, '/holiday-homes': t.nav.holiday, '/about': t.nav.about, '/reviews': t.nav.reviews, '/contact': t.nav.contact, '/quote': t.nav.quote, '/privacy': t.legal.privacyTitle, '/cookies': t.legal.cookieTitle }
+    const titles = { '/': t.hero.title, '/services': t.nav.services, '/work': t.nav.work, '/holiday-homes': t.nav.holiday, '/about': t.nav.about, '/reviews': t.nav.reviews, '/contact': t.nav.contact, '/quote': t.nav.quote, '/links': 'Contact and social links', '/privacy': t.legal.privacyTitle, '/cookies': t.legal.cookieTitle }
     const descriptions = { '/': t.hero.body, '/services': t.serviceSection.intro, '/work': t.work.body, '/holiday-homes': t.holiday.body, '/about': t.about.body, '/reviews': t.reviews.empty, '/contact': t.contact.body, '/quote': t.quote.body }
     const title = titles[pathname] ? `${titles[pathname]} | Martins In House Services` : 'Página não encontrada | Martins In House Services'
     const description = descriptions[pathname] || t.footer.promise
@@ -69,10 +70,12 @@ function Seo() {
 }
 
 function Layout({ children }) {
+  const { language } = useLanguage()
   const location = useLocation()
   const publicSiteRef = useRef(null)
   usePublicMotion(publicSiteRef, location.pathname)
   useEffect(() => { window.scrollTo({ top: 0, behavior: 'instant' }) }, [location.pathname])
+  if (location.pathname === '/links') return <div className="public-site"><Seo /><LinksPage language={language} /></div>
   return <div ref={publicSiteRef} className="public-site"><Seo /><SiteLoader /><Header />{children}<Footer /><MobileActions /></div>
 }
 
